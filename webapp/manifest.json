@@ -1,0 +1,279 @@
+{
+    "_version": "1.7.0",
+    "start_url": "start.html",
+    "sap.app": {
+        "id": "kc.plm.spexovp.ZPLKC_SPEX_OVP",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{app_title}}",
+        "description": "{{app_description}}",
+        "dataSources": {
+            "ZPLKC_DOC_SEARCH_SRV": {
+                "uri": "/sap/opu/odata/sap/ZPLKC_DOC_SEARCH_SRV/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0",
+                    "localUri": "localService/ZPLKC_DOC_SEARCH_SRV/metadata.xml",
+                    "annotations": [
+                        "annotation"
+                    ]
+                }
+            },
+            "annotation": {
+                "type": "ODataAnnotation",
+                "uri": "localService/annotation.xml",
+                "settings": {
+                    "localUri": "localService/annotation.xml"
+                }
+            }
+        },
+        "sourceTemplate": {
+            "id": "OVP.smartovptemplate",
+            "version": "1.41.1",
+            "toolsId": "2cab9a9d-e4ec-4347-841c-5a1c215c7ce2"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.65.6",
+            "libs": {
+                "sap.ovp": {}
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "@i18n": {
+                "preload": true,
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "ZPLKC_DOC_SEARCH_SRV": {
+                "dataSource": "ZPLKC_DOC_SEARCH_SRV",
+                "settings": {
+                    "defaultCountMode": "Inline"
+                }
+            }
+        },
+        "extends": {
+            "extensions": {
+                "sap.ui.controllerExtensions": {
+                    "sap.ovp.app.Main": {
+                        "controllerName": "kc.plm.spexovp.ZPLKC_SPEX_OVP.ext.OverViewPage.OverViewPage"
+                    }
+                }
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        }
+    },
+    "sap.ovp": {
+        "globalFilterModel": "ZPLKC_DOC_SEARCH_SRV",
+        "globalFilterEntityType": "SPECIFICATION",
+        "smartVariantRequired": false,
+        "containerLayout": "resizable",
+        "enableLiveFilter": true,
+        "considerAnalyticalParameters": false,
+        "cards": {
+            "card00": {
+                "model": "ZPLKC_DOC_SEARCH_SRV",
+                "template": "sap.ovp.cards.linklist",
+                "settings": {
+                    "title": "{{card00_title}}",
+                    "subTitle": "{{card00_subTitle}}",
+                    "listFlavor": "standard",
+                    "requireAppAuthorization": "#ZPLKC_SPEX_COMP_SEMOBJ-display",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#identify1",
+                    "stopResizing": true,
+                    "defaultSpan": {
+                        "rows": 22,
+                        "cols": 1
+                    },
+                    "staticContent": [
+                        {
+                            "title": "Component Specifications",
+                            "imageUri": "sap-icon://technical-object",
+                            "imageAltText": "Component Specifications",
+                            "requiresContext": "false",
+                            "semanticObject": "ZPLKC_SPEX_COMP_SEMOBJ",
+                            "action": "display"
+                        },
+                        {
+                            "title": "Assembly Specifications",
+                            "imageUri": "sap-icon://add-product",
+                            "imageAltText": "Assembly Specifications",
+                            "semanticObject": "ZPLKC_SPEX_ASMY_SEMOBJ",
+                            "action": "display"
+                        },
+                        {
+                            "title": "PM Specifications",
+                            "imageUri": "sap-icon://e-care",
+                            "imageAltText": "PM Specifications",
+                            "semanticObject": "ZPLKC_SPEX_PM_SEMOBJ",
+                            "action": "display"
+                        },
+                        {
+                            "title": "Waiver Specifications",
+                            "imageUri": "sap-icon://wrench",
+                            "imageAltText": "Waiver Specifications",
+                            "semanticObject": "ZPLKC_SPEX_WAIV_SEMOBJ",
+                            "action": "display"
+                        },
+                        {
+                            "title": "U&L Specifications",
+                            "imageUri": "sap-icon://sys-find",
+                            "imageAltText": "U&L Specifications",
+                            "semanticObject": "ZPLKC_SPEX_UL",
+                            "action": "display"
+                        }
+                    ]
+                }
+            },
+            "card01": {
+                "model": "ZPLKC_DOC_SEARCH_SRV",
+                "template": "sap.ovp.cards.linklist",
+                "settings": {
+                    "title": "{{card01_title}}",
+                    "subTitle": "{{card01_subTitle}}",
+                    "listFlavor": "standard",
+                    "requireAppAuthorization": "#ZPLKC_SPEX_MAT-display",
+                    "stopResizing": true,
+                    "defaultSpan": {
+                        "rows": 30,
+                        "cols": 1
+                    },
+                    "staticContent": [
+                        {
+                            "title": "Raw Material Specifications",
+                            "imageUri": "sap-icon://BusinessSuiteInAppSymbols/icon-raw-material",
+                            "imageAltText": "Raw Material Specifications",
+                            "semanticObject": "ZPLKC_SPEX_MAT",
+                            "action": "display"
+                        },
+                        {
+                            "title": "Variant Specifications",
+                            "imageUri": "sap-icon://shelf",
+                            "imageAltText": "Variant Specifications",
+                            "semanticObject": "ZPLKC_SPEX_VAR",
+                            "action": "display"
+                        },
+                        {
+                            "title": "SKU Asset Recipes",
+                            "imageUri": "sap-icon://sap-box",
+                            "imageAltText": "Variant Specifications",
+                            "semanticObject": "ZPLKC_SPEX_SKU_SEMOBJ",
+                            "action": "display"
+                        }
+                    ]
+                }
+            },
+            "card02": {
+                "model": "ZPLKC_DOC_SEARCH_SRV",
+                "template": "sap.ovp.cards.table",
+                "settings": {
+                    "title": "{{card02_title}}",
+                    "subTitle": "{{card02_subTitle}}",
+                    "entitySet": "SPECIFICATIONSet",
+                    "listType": "condensed",
+                    "stopResizing": "true",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#SearchList",
+                    "defaultSpan": {
+                        "rows": 30000,
+                        "cols": 3
+                    }
+                }
+            },
+            "card03": {
+                "model": "ZPLKC_DOC_SEARCH_SRV",
+                "template": "sap.ovp.cards.list",
+                "settings": {
+                    "title": "{{card03_title}}",
+                    "subTitle": "{{card03_subTitle}}",
+                    "entitySet": "URLSet",
+                    "requireAppAuthorization": "#ZPLKC_SPEX_COMP_SEMOBJ-display",
+                    "stopResizing": true,
+                    "listFlavor": "standard",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#HomePageLinks",
+                    "defaultSpan": {
+                        "rows": 10,
+                        "cols": 1
+                    }
+                }
+            },
+            "card04": {
+                "template": "kc.plm.spexovp.ZPLKC_SPEX_OVP.ext.ContactCard",
+                "settings": {
+                    "title": "{{card04_title}}",
+                    "subTitle": "{{card04_subTitle}}",
+                    "requireAppAuthorization": "#ZPLKC_SPEX_COMP_SEMOBJ-display",
+                    "stopResizing": "true",
+                    "defaultSpan": {
+                        "rows": 10,
+                        "cols": 1
+                    }
+                }
+            },
+            "card05": {
+                "model": "ZPLKC_DOC_SEARCH_SRV",
+                "template": "kc.plm.spexovp.ZPLKC_SPEX_OVP.ext.AnnouncementsInfo",
+                "settings": {
+                    "title": "{{Announcements}}",
+                    "entitySet": "ANNOUCEMENTSet",
+                    "requireAppAuthorization": "#ZPLKC_SPEX_COMP_SEMOBJ-display",
+                    "defaultSpan": {
+                        "rows": 10,
+                        "cols": 1
+                    }
+                }
+            },
+            "card06": {
+                "template": "kc.plm.spexovp.ZPLKC_SPEX_OVP.ext.ContactCardProdSpec",
+                "settings": {
+                    "title": "{{card04_title}}",
+                    "requireAppAuthorization": "#ZPLKC_SPEX_MAT-display",
+                    "stopResizing": "true",
+                    "defaultSpan": {
+                        "rows": 10,
+                        "cols": 1
+                    }
+                }
+            },
+            "card07": {
+                "model": "ZPLKC_DOC_SEARCH_SRV",
+                "template": "kc.plm.spexovp.ZPLKC_SPEX_OVP.ext.AnnouncementsProdSpec",
+                "settings": {
+                    "title": "{{Announcements}}",
+                    "entitySet": "ANNOUCEMENT_SPOTSet",
+                    "requireAppAuthorization": "#ZPLKC_SPEX_MAT-display",
+                    "stopResizing": "true",
+                    "defaultSpan": {
+                        "rows": 10,
+                        "cols": 1
+                    }
+                }
+            }
+        }
+    },
+    "sap.platform.abap": {
+        "uri": "/sap/bc/ui5_ui5/sap/zplkc_spex_ovp/webapp",
+        "_version": "1.1.0"
+    }
+}

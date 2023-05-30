@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:ovp="sap.ovp.ui" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
+            <!-- Card's Content area code goes here -->
+
+        <VBox class="sapUiSmallMargin">
+			<f:Form id="FormDisplay354"	editable="false">
+				<f:title>
+					<core:Title level="H2" text="Contact Information" />
+				</f:title>
+				<f:layout>
+					<f:ResponsiveGridLayout
+					columnsXL="3"
+					columnsL="3"
+					columnsM="3"
+					 />
+				</f:layout>
+					<f:FormContainer title="Product Specification">
+						<f:FormElement label="Owner">
+							<f:fields>
+								<Link id="Owner" text="Pat Birschbach" press="fnOpenEmail"/>	
+							</f:fields>
+						</f:FormElement>						
+						<f:FormElement  label="PLM System Access">
+							<f:fields>
+								<Link id="PLMSystemAccess" text="PLM System Access" press="fnOpenEmail"/>
+							</f:fields>
+						</f:FormElement>
+                        <f:FormElement  label="Raw Material,Variant,SKU Spec Support">
+							<f:fields>
+								<Link id="BCCTeam" text="Change Coordination Team Members list" press="fnOpenEmail"/>
+							</f:fields>
+						</f:FormElement>
+					</f:FormContainer>
+			</f:Form>
+		</VBox>
+</core:FragmentDefinition>

@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:ovp="sap.ovp.ui" xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
+    <l:VerticalLayout id="idVerticalLayout"
+		class="sapUiContentPadding"
+		width="100%" >
+		<l:content>        
+			<OverflowToolbar id="idOverflowToolbar" style="Standard">                
+                <Title level="H1" text="Announcements" titleStyle="H1" />                
+				<ToolbarSpacer/>				
+			</OverflowToolbar>
+            <OverflowToolbar id="idOverflowToolbarProd">
+                <Title level="H4" text="Product Specification" titleStyle="H4"/>
+				<ToolbarSpacer/>				
+			</OverflowToolbar>		
+        </l:content>
+    </l:VerticalLayout>
+</core:FragmentDefinition>

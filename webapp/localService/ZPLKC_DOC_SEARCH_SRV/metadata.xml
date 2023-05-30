@@ -1,0 +1,334 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZPLKC_DOC_SEARCH_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="SPECIFICATION" sap:content-version="1">
+				<Key><PropertyRef Name="Subcat"/><PropertyRef Name="Subid"/></Key><Property Name="AssmTy" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Assembly Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="Color" Type="Edm.Byte" Nullable="false" sap:unicode="false" sap:label="To Display Red Color when Spec is in RE* status."
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ProductReport" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Product Specification Report"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Modified" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Modified" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="MatnrVarSpec" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Phantom Assigned"
+					sap:creatable="false" sap:updatable="false"/><Property Name="SizeType" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="SKU Size Type"
+					sap:creatable="false" sap:updatable="false"/><Property Name="VariantSpec" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false"
+					sap:label="Variant Specification Assigned" sap:creatable="false" sap:updatable="false"/><Property Name="External" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="R/2 table" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="AssSpecs" Type="Edm.String" Nullable="false" MaxLength="1024" sap:unicode="false" sap:label="Assembly Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="MatnrH" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material" sap:creatable="false"
+					sap:updatable="false"/><Property Name="SpecList" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Get full Specification list"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DateInt" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Change Initiated"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SubidD" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Specification"
+					sap:creatable="false" sap:updatable="false"/><Property Name="Subcat" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false"/><Property Name="SpecDescr" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Specification Description"
+					sap:creatable="false" sap:updatable="false"/><Property Name="Semantic" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Semantic objects"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SpecDescLong" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Specification Description"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="AssmTyOutput" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Assembly Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Reason" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Reason for change"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PlantOutput" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Plant" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PrdFormOutput" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Product Form"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="VendorOutput" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Vendor"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="BrandOutput" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Brand" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="MatnrItem" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Material Item"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="RmSizeOutput" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Size" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ReportType" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Report Type"
+					sap:creatable="false" sap:updatable="false"/><Property Name="SectorOutput" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Sector"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="WaiverOutput" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Waivers"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="StatusOutput" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Status"
+					sap:creatable="false" sap:updatable="false"/><Property Name="VarPropSpec" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false"
+					sap:label="Variant Property Specification" sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="CompTypeOutput" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Component Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Crdat" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Created On" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/><Property Name="PmTypeOutput" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="PM Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="VarSpec" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Variant Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="BagPerWic" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Bags Per Wicket"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IntendedUseOutput" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Intended Used"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="AssetOutput" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Asset" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="VarAltVer" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Variant/Alt/Version"
+					sap:creatable="false" sap:updatable="false"/><Property Name="EffDate" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Effective date"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="MachineTypeOutput" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Machine Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="PROD" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="WaiverStDate" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Waiver Start Date"
+					sap:creatable="false" sap:updatable="false" sap:filterable="false"/><Property Name="CompSpecs" Type="Edm.String" Nullable="false" MaxLength="1024" sap:unicode="false" sap:label="Component Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="WaiverSpDate" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Waiver Stop Date"
+					sap:creatable="false" sap:updatable="false" sap:filterable="false"/><Property Name="WicPerCase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Wickets Per Case"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="CarPerCase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Cartons Per Case"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PkgAsmbl" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Packing Assembly"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Quantity" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Quantity" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="CompPerCase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Components Per Case"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Po" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="PO" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DatePub" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Published"
+					sap:creatable="false" sap:updatable="false"/><Property Name="PkgComp" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Packing Component"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PkgPm" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="PM Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Recn" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Sequential Number of Data Record"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="AssSpecWu" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false"
+					sap:label="Assemble Specification Where used" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="MostCurr" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Most Current"
+					sap:creatable="false" sap:updatable="false"/><Property Name="PkgRm" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="RM Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PkgUl" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="UL Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PrdForm" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Product Form"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="PkgVar" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Variant Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false"
+					sap:label="Spec/Material/SKU(Ex:5000000057711,70341227,101968701)" sap:creatable="false" sap:updatable="false"/><Property Name="Brand" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Brand" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="PkgWaivr" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Waiver Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Descr" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Status Description"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="IdentDescr1" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Sector" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Sector" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="IdentDescr2" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 2"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Plant" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Plant" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="IdentDescr3" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 3"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Status" sap:creatable="false"
+					sap:updatable="false"/><Property Name="AdvFr" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Advanced From" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="AdvTo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Advanced To" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="Subnam" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Description of Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="CompType" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Component Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="Crnam" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Created By" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/><Property Name="DocMain" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Document URL" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Vendor" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Vendor" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="Characters" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Characteristic"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="PmSpec" Type="Edm.String" Nullable="false" MaxLength="1024" sap:unicode="false" sap:label="PM Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="Phrtext" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Pharse Text"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="ULSpec" Type="Edm.String" Nullable="false" MaxLength="1024" sap:unicode="false" sap:label="U and L Specification"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="Content" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Full text search"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="PmType" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="PM Type" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="IntendedUse" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Intended Used"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false"
+					sap:label="Material Number/Finished Product Code" sap:creatable="false" sap:updatable="false"/><Property Name="Waiver" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Waivers" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="Asset" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Asset" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="MachineType" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Machine Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/><Property Name="RmSize" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Size" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><NavigationProperty Name="ASSEMBLY_WHERE_USED" Relationship="ZPLKC_DOC_SEARCH_SRV.SPEC_DET" FromRole="FromRole_SPEC_DET"
+					ToRole="ToRole_SPEC_DET"/><NavigationProperty Name="COMP_WHERE_USED" Relationship="ZPLKC_DOC_SEARCH_SRV.COMP_WUSED" FromRole="FromRole_COMP_WUSED"
+					ToRole="ToRole_COMP_WUSED"/><NavigationProperty Name="WAIVER_WHERE_USED" Relationship="ZPLKC_DOC_SEARCH_SRV.WAIVER_USED" FromRole="FromRole_WAIVER_USED"
+					ToRole="ToRole_WAIVER_USED"/><NavigationProperty Name="ADVANCED_FROM" Relationship="ZPLKC_DOC_SEARCH_SRV.ADV_FR" FromRole="FromRole_ADV_FR" ToRole="ToRole_ADV_FR"/><NavigationProperty Name="ADVANCED_TO" Relationship="ZPLKC_DOC_SEARCH_SRV.ADV_TO" FromRole="FromRole_ADV_TO" ToRole="ToRole_ADV_TO"/><NavigationProperty Name="ASSEMBLY_SPECS" Relationship="ZPLKC_DOC_SEARCH_SRV.ASMBL_C" FromRole="FromRole_ASMBL_C" ToRole="ToRole_ASMBL_C"/><NavigationProperty Name="COMPONENT_SPECS" Relationship="ZPLKC_DOC_SEARCH_SRV.COMP_C" FromRole="FromRole_COMP_C" ToRole="ToRole_COMP_C"/></EntityType>
+			<EntityType Name="PRODUCT_FORM" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Product Form"
+					sap:creatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ASMBL_TYPE" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Assembly Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="BRAND" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Brand" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="SECTOR" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Sector" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="COMPTYPE" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Component Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="PMTYPE" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Packaging Material Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="INTUSED" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Intended Use"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="MACHINETYPE" sap:content-version="1">
+				<Key><PropertyRef Name="Phrase"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Machine Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="SPEC_DETAILS" sap:content-version="1">
+				<Key><PropertyRef Name="Subcat"/><PropertyRef Name="Subid"/></Key><Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Finished Product Code"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subcat" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Specification" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IdentDescr1" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Specification Status"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DatePub" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Published"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="COMP_WHERE_USED" sap:content-version="1">
+				<Key><PropertyRef Name="Subid"/><PropertyRef Name="Subcat"/></Key><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Specification" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subcat" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IdentDescr1" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material Number"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Specification Status"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DatePub" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Published"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="WAIVER_WHERE_USED" sap:content-version="1">
+				<Key><PropertyRef Name="Subid"/><PropertyRef Name="Subcat"/></Key><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Specification" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IdentDescr1" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subcat" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material Number"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Specification Status"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DatePub" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Published"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ASSEMBLY_SPECS" sap:content-version="1">
+				<Key><PropertyRef Name="Subcat"/><PropertyRef Name="Subid"/></Key><Property Name="IdentDescr1" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subcat" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material Number"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Specification Status"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DatePub" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Published"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Specification" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="COMPONENT_SPECS" sap:content-version="1">
+				<Key><PropertyRef Name="Subid"/><PropertyRef Name="Subcat"/></Key><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Specification" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IdentDescr1" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subcat" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material Number"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Specification Status"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DatePub" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Published"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ANNOUCEMENT" sap:content-version="1">
+				<Key><PropertyRef Name="ValidFr"/><PropertyRef Name="ValidTo"/></Key><Property Name="TextAnn" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Fiori Annoucement Te"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ValidFr" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Valid From" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ValidTo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Valid To" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="USER_TYPE" sap:content-version="1">
+				<Key><PropertyRef Name="External"/></Key><Property Name="External" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="R/2 table" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="SIZE_TYPE" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Text" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ZSKU_STATUS" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Text" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="REPORT_TYPE" sap:content-version="1">
+				<Key><PropertyRef Name="Phrase"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Text" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="RM_STATUS" sap:content-version="1">
+				<Key><PropertyRef Name="Phrase"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Text" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ANNOUCEMENT_SPOT" sap:content-version="1">
+				<Key><PropertyRef Name="TextAnn"/></Key><Property Name="TextAnn" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Fiori Annoucement Te"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ADVANCED_FROM" sap:content-version="1">
+				<Key><PropertyRef Name="Subcat"/><PropertyRef Name="Subid"/></Key><Property Name="IdentDescr1" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subcat" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material Number"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Specification Status"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DatePub" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Published"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Specification" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ADVANCED_TO" sap:content-version="1">
+				<Key><PropertyRef Name="Subcat"/><PropertyRef Name="Subid"/></Key><Property Name="IdentDescr1" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Identifier 1"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subcat" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Matnr" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material Number"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Specification Status"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="DatePub" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date Published"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Specification" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="SIZE" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Size" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="BRAND_VAR" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Brand" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="PLANT" sap:content-version="1">
+				<Key><PropertyRef Name="Lifnr"/><PropertyRef Name="Name1"/><PropertyRef Name="Name2"/></Key><Property Name="Lifnr" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Vendor" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="External" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Value" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Name1" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="Name2" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Name 2" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/><Property Name="Stras" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Street" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Ort01" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="City" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Regio" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Region" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="STATUS" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Status Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Specification Status"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="SUBCAT" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Specification Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Description"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="DOCCONTENT" m:HasStream="true" sap:content-version="1">
+				<Key><PropertyRef Name="Subid"/></Key><Property Name="Subid" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Specification" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="WAIVER" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Waiver" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ASSET" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Asset" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="VAR_STATUS" sap:content-version="1">
+				<Key><PropertyRef Name="PhrText"/></Key><Property Name="Phrase" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Phrase Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PhrText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="Status" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/></EntityType>
+			<EntityType Name="VENDOR" sap:content-version="1">
+				<Key><PropertyRef Name="Lifnr"/><PropertyRef Name="Name1"/></Key><Property Name="Lifnr" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Vendor" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Name1" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Name2" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Name 2" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Stras" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Street" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Ort01" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="City" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Regio" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Region" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="RM_VENDOR" sap:content-version="1">
+				<Key><PropertyRef Name="Lifnr"/><PropertyRef Name="Name1"/></Key><Property Name="Lifnr" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Vendor" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Name1" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Name2" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Name 2" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Stras" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Street" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Ort01" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="City" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Regio" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Region" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="URL" sap:content-version="1">
+				<Key><PropertyRef Name="UrlText"/></Key><Property Name="UrlText" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="URL Text" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Url" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="String" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<Association Name="COMP_WUSED" sap:content-version="1"><End Type="ZPLKC_DOC_SEARCH_SRV.SPECIFICATION" Multiplicity="1" Role="FromRole_COMP_WUSED"/><End Type="ZPLKC_DOC_SEARCH_SRV.COMP_WHERE_USED" Multiplicity="*" Role="ToRole_COMP_WUSED"/></Association>
+			<Association Name="WAIVER_USED" sap:content-version="1"><End Type="ZPLKC_DOC_SEARCH_SRV.SPECIFICATION" Multiplicity="1" Role="FromRole_WAIVER_USED"/><End Type="ZPLKC_DOC_SEARCH_SRV.WAIVER_WHERE_USED" Multiplicity="*" Role="ToRole_WAIVER_USED"/></Association>
+			<Association Name="ADV_FR" sap:content-version="1"><End Type="ZPLKC_DOC_SEARCH_SRV.SPECIFICATION" Multiplicity="1" Role="FromRole_ADV_FR"/><End Type="ZPLKC_DOC_SEARCH_SRV.ADVANCED_FROM" Multiplicity="*" Role="ToRole_ADV_FR"/></Association>
+			<Association Name="ADV_TO" sap:content-version="1"><End Type="ZPLKC_DOC_SEARCH_SRV.SPECIFICATION" Multiplicity="1" Role="FromRole_ADV_TO"/><End Type="ZPLKC_DOC_SEARCH_SRV.ADVANCED_TO" Multiplicity="*" Role="ToRole_ADV_TO"/></Association>
+			<Association Name="ASMBL_C" sap:content-version="1"><End Type="ZPLKC_DOC_SEARCH_SRV.SPECIFICATION" Multiplicity="1" Role="FromRole_ASMBL_C"/><End Type="ZPLKC_DOC_SEARCH_SRV.ASSEMBLY_SPECS" Multiplicity="*" Role="ToRole_ASMBL_C"/></Association>
+			<Association Name="COMP_C" sap:content-version="1"><End Type="ZPLKC_DOC_SEARCH_SRV.SPECIFICATION" Multiplicity="1" Role="FromRole_COMP_C"/><End Type="ZPLKC_DOC_SEARCH_SRV.COMPONENT_SPECS" Multiplicity="*" Role="ToRole_COMP_C"/></Association>
+			<Association Name="SPEC_DET" sap:content-version="1"><End Type="ZPLKC_DOC_SEARCH_SRV.SPECIFICATION" Multiplicity="1" Role="FromRole_SPEC_DET"/><End Type="ZPLKC_DOC_SEARCH_SRV.SPEC_DETAILS" Multiplicity="*" Role="ToRole_SPEC_DET"/></Association>
+			<EntityContainer Name="ZPLKC_DOC_SEARCH_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="SPECIFICATIONSet" EntityType="ZPLKC_DOC_SEARCH_SRV.SPECIFICATION" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="PRDFORMSet" EntityType="ZPLKC_DOC_SEARCH_SRV.PRODUCT_FORM" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ASMBLTYSet" EntityType="ZPLKC_DOC_SEARCH_SRV.ASMBL_TYPE" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="BRANDSet" EntityType="ZPLKC_DOC_SEARCH_SRV.BRAND" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:searchable="true" sap:pageable="false" sap:content-version="1"/><EntitySet Name="SECTORSet" EntityType="ZPLKC_DOC_SEARCH_SRV.SECTOR" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="COMPTYPESet" EntityType="ZPLKC_DOC_SEARCH_SRV.COMPTYPE" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="PMTYPESet" EntityType="ZPLKC_DOC_SEARCH_SRV.PMTYPE" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="INTUSEDSet" EntityType="ZPLKC_DOC_SEARCH_SRV.INTUSED" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="MACHINETYPESet" EntityType="ZPLKC_DOC_SEARCH_SRV.MACHINETYPE" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="SPEC_DETAILSSet" EntityType="ZPLKC_DOC_SEARCH_SRV.SPEC_DETAILS" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="COMP_WHERE_USEDSet" EntityType="ZPLKC_DOC_SEARCH_SRV.COMP_WHERE_USED" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="WAIVER_WHERE_USEDSet" EntityType="ZPLKC_DOC_SEARCH_SRV.WAIVER_WHERE_USED" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ASSEMBLY_SPECSSet" EntityType="ZPLKC_DOC_SEARCH_SRV.ASSEMBLY_SPECS" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="COMPONENT_SPECSSet" EntityType="ZPLKC_DOC_SEARCH_SRV.COMPONENT_SPECS" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="ANNOUCEMENTSet" EntityType="ZPLKC_DOC_SEARCH_SRV.ANNOUCEMENT" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="USER_TYPESet" EntityType="ZPLKC_DOC_SEARCH_SRV.USER_TYPE" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="SIZE_TYPESet" EntityType="ZPLKC_DOC_SEARCH_SRV.SIZE_TYPE" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="ZSKU_STATUSSet" EntityType="ZPLKC_DOC_SEARCH_SRV.ZSKU_STATUS" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="REPORT_TYPESet" EntityType="ZPLKC_DOC_SEARCH_SRV.REPORT_TYPE" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="RM_STATUSSet" EntityType="ZPLKC_DOC_SEARCH_SRV.RM_STATUS" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="ANNOUCEMENT_SPOTSet" EntityType="ZPLKC_DOC_SEARCH_SRV.ANNOUCEMENT_SPOT" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ADVANCED_FROMSet" EntityType="ZPLKC_DOC_SEARCH_SRV.ADVANCED_FROM" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ADVANCED_FROM001Set" EntityType="ZPLKC_DOC_SEARCH_SRV.ADVANCED_TO" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="SIZESet" EntityType="ZPLKC_DOC_SEARCH_SRV.SIZE" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="BRANDVARSet" EntityType="ZPLKC_DOC_SEARCH_SRV.BRAND_VAR" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="PLANTSet" EntityType="ZPLKC_DOC_SEARCH_SRV.PLANT" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="STATUSSet" EntityType="ZPLKC_DOC_SEARCH_SRV.STATUS" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="SUBCATSet" EntityType="ZPLKC_DOC_SEARCH_SRV.SUBCAT" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="DOCCONTENTSet" EntityType="ZPLKC_DOC_SEARCH_SRV.DOCCONTENT" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="WAIVERSet" EntityType="ZPLKC_DOC_SEARCH_SRV.WAIVER" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="ASSETSet" EntityType="ZPLKC_DOC_SEARCH_SRV.ASSET" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="VAR_STATUSSet" EntityType="ZPLKC_DOC_SEARCH_SRV.VAR_STATUS" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="VENDORSet" EntityType="ZPLKC_DOC_SEARCH_SRV.VENDOR" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="RM_VENDORSet" EntityType="ZPLKC_DOC_SEARCH_SRV.RM_VENDOR" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="URLSet" EntityType="ZPLKC_DOC_SEARCH_SRV.URL" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/>
+				<AssociationSet Name="ASMBL_C_AssocSet" Association="ZPLKC_DOC_SEARCH_SRV.ASMBL_C" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="SPECIFICATIONSet" Role="FromRole_ASMBL_C"/><End EntitySet="ASSEMBLY_SPECSSet" Role="ToRole_ASMBL_C"/></AssociationSet>
+				<AssociationSet Name="ADV_FR_AssocSet" Association="ZPLKC_DOC_SEARCH_SRV.ADV_FR" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="SPECIFICATIONSet" Role="FromRole_ADV_FR"/><End EntitySet="ADVANCED_FROMSet" Role="ToRole_ADV_FR"/></AssociationSet>
+				<AssociationSet Name="ADV_TO_AssocSet" Association="ZPLKC_DOC_SEARCH_SRV.ADV_TO" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="SPECIFICATIONSet" Role="FromRole_ADV_TO"/><End EntitySet="ADVANCED_FROM001Set" Role="ToRole_ADV_TO"/></AssociationSet>
+				<AssociationSet Name="COMP_C_AssocSet" Association="ZPLKC_DOC_SEARCH_SRV.COMP_C" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="SPECIFICATIONSet" Role="FromRole_COMP_C"/><End EntitySet="COMPONENT_SPECSSet" Role="ToRole_COMP_C"/></AssociationSet>
+				<AssociationSet Name="SPEC_DET_AssocSet" Association="ZPLKC_DOC_SEARCH_SRV.SPEC_DET" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="SPECIFICATIONSet" Role="FromRole_SPEC_DET"/><End EntitySet="SPEC_DETAILSSet" Role="ToRole_SPEC_DET"/></AssociationSet>
+				<AssociationSet Name="COMP_WUSED_AssocSet" Association="ZPLKC_DOC_SEARCH_SRV.COMP_WUSED" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="SPECIFICATIONSet" Role="FromRole_COMP_WUSED"/><End EntitySet="COMP_WHERE_USEDSet" Role="ToRole_COMP_WUSED"/></AssociationSet>
+				<AssociationSet Name="WAIVER_USED_AssocSet" Association="ZPLKC_DOC_SEARCH_SRV.WAIVER_USED" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1"><End EntitySet="SPECIFICATIONSet" Role="FromRole_WAIVER_USED"/><End EntitySet="WAIVER_WHERE_USEDSet" Role="ToRole_WAIVER_USED"/></AssociationSet>
+			</EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZPLKC_DOC_SEARCH_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZPLKC_DOC_SEARCH_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

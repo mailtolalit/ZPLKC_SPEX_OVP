@@ -1,0 +1,66 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/sap/opu/odata/sap/ZPLKC_DOC_SEARCH_SRV/$metadata">
+		<edmx:Include Alias="Metadata" Namespace="ZPLKC_DOC_SEARCH_SRV"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="ZPLKC_SPEX_OVP.Annotations.annotation.ZPLKC_DOC_SEARCH_SRV">
+			<Annotations Target="Metadata.SPECIFICATION">
+				<Annotation Term="UI.Identification" Qualifier="identity">
+					<Collection>
+						<Record Type="UI.DataFieldForIntentBasedNavigation">
+							<PropertyValue Property="SemanticObject" Path="Semantic"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="SearchList">
+					<Collection>
+						<Record Type="UI.DataFieldForIntentBasedNavigation">
+							<PropertyValue Property="SemanticObject" Path="Semantic"/>
+							<PropertyValue Property="Action" String="display"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Subid"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;SPECIFICATIONS}"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="SpecDescr"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="MatnrH"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>Subid</PropertyPath>
+						<PropertyPath>Content</PropertyPath>
+						<PropertyPath>Subcat</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.URL">
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataFieldWithUrl">
+							<PropertyValue Property="Url" Path="Url"/>
+							<PropertyValue Property="Value" Path="UrlText"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="HomePageLinks">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="UrlText"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.SPECIFICATION/Subcat">
+				<Annotation Term="UI.HiddenFilter" Bool="true"/>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

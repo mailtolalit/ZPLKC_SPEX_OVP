@@ -1,0 +1,147 @@
+{
+    "resources": [
+        {
+            "name": ".che/project.json"
+        },
+        {
+            "name": ".gitignore"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "Gruntfile.js"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "dist"
+        },
+        {
+            "name": "ext/AnnouncementsInfo/AnnouncementsInfo.controller.js"
+        },
+        {
+            "name": "ext/AnnouncementsInfo/AnnouncementsInfo.fragment.xml"
+        },
+        {
+            "name": "ext/AnnouncementsInfo/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "ext/AnnouncementsInfo/Component.js"
+        },
+        {
+            "name": "ext/AnnouncementsProdSpec/AnnouncementsProdSpec.controller.js"
+        },
+        {
+            "name": "ext/AnnouncementsProdSpec/AnnouncementsProdSpec.fragment.xml"
+        },
+        {
+            "name": "ext/AnnouncementsProdSpec/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "ext/AnnouncementsProdSpec/Component.js"
+        },
+        {
+            "name": "ext/ContactCard/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "ext/ContactCard/Component.js"
+        },
+        {
+            "name": "ext/ContactCard/ContactCard.controller.js"
+        },
+        {
+            "name": "ext/ContactCard/ContactCard.fragment.xml"
+        },
+        {
+            "name": "ext/ContactCardProdSpec/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "ext/ContactCardProdSpec/Component.js"
+        },
+        {
+            "name": "ext/ContactCardProdSpec/ContactCardProdSpec.controller.js"
+        },
+        {
+            "name": "ext/ContactCardProdSpec/ContactCardProdSpec.fragment.xml"
+        },
+        {
+            "name": "ext/OverViewPage/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "ext/OverViewPage/Component.js"
+        },
+        {
+            "name": "ext/OverViewPage/OverViewPage.controller.js"
+        },
+        {
+            "name": "ext/OverViewPage/OverViewPage.fragment.xml"
+        },
+        {
+            "name": "ext/readme.txt"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "img/readme.txt"
+        },
+        {
+            "name": "localService/ZPLKC_DOC_SEARCH_SRV/metadata.xml"
+        },
+        {
+            "name": "localService/annotation.xml"
+        },
+        {
+            "name": "localService/mockserver.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "node_modules"
+        },
+        {
+            "name": "package-lock.json"
+        },
+        {
+            "name": "package.json"
+        },
+        {
+            "name": "resources/sap-ui-version.json"
+        },
+        {
+            "name": "resources.json",
+            "merged": true
+        },
+        {
+            "name": "sap-ui-cachebuster-info.json"
+        },
+        {
+            "name": "test/fakeLRep.json"
+        },
+        {
+            "name": "test/testOVP.html"
+        },
+        {
+            "name": "test/testOVPwithMock.html"
+        }
+    ]
+}
